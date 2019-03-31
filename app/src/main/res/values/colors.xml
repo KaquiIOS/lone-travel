@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="common_deep_sky_blue">#00BFFF</color>
+    <color name="common_dim_gray">#696969</color>
+    <color name="common_gray">#808080</color>
+    <color name="common_black">#000000</color>
+
+    <color name="dodger_blue">#1E90FF</color>
+
+    <color name="text_gray">#5D5D5D</color>
+    <color name="view_gray">#C2C2C2</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ff0000 </color>
+    <color name="purple">#9253EB</color>
+    <color name="violet">#5C1DB5</color>
+    <color name="orange">#BA602B</color>
+    <color name="skyblue">#6799FF</color>
+    <color name="cyan">#008080</color>
+    <color name="royal_blue">#4169E1</color>
+
+    <color name="royal_bule">#4169E1</color>
+    <color name="menu_gray">#4D4D4D</color>
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+    <color name="main_bg">#F6F6F6</color>
+    <color name="main_yellow">#FDCE00</color>
+    <color name="main_mint">#00CFC3</color>
+    <color name="main_red">#F96246</color>
+    <color name="font_color">#E4E4E4</color>
+
+    <color name="white">#fff</color>
+
+    <color name="splash_skyblue">#87CEEB</color>
+    <color name="splash_iight_skyblue">#87CEFA</color>
+    <color name="corar">#FF7F50</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#ff5959</color>
+    <color name="bg_screen2">#09c6ab</color>
+    <color name="bg_screen3">#60424c</color>
+    <color name="bg_screen4">#1989ac</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#f4eec0</color>
+    <color name="dot_dark_screen2">#aed09e</color>
+    <color name="dot_dark_screen3">#61b292</color>
+    <color name="dot_dark_screen4">#7e6752</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ff9234</color>
+    <color name="dot_light_screen2">#ffcd3c</color>
+    <color name="dot_light_screen3">#fefed5</color>
+    <color name="dot_light_screen4">#35d0ba</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/corar</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/main_red</item>
+    </array>
+</resources>

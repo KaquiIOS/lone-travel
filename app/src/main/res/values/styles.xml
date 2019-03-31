@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Divider">
+        <item name="android:layout_width">3dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Ratingbar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MainMenuTitleAppearance">
+        <item name="android:textColor">@color/menu_gray</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/main_mint</item>
+        <item name="colorPrimaryDark">@color/main_mint</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <!--Default Theme-->
+    <style name="base_theme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textViewStyle">@style/TextViewDefaultFont</item>
+        <item name="android:buttonStyle">@style/ButtonDefaultFont</item>
+        <item name="android:editTextStyle">@style/EditTextDefaultFont</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <!-- font style -->
+    <style name="TextViewDefaultFont" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:fontFamily">@font/hanum</item>
+    </style>
+
+    <style name="ButtonDefaultFont" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:fontFamily">@font/hanum</item>
+    </style>
+
+    <style name="EditTextDefaultFont" parent="@android:style/Widget.DeviceDefault.EditText">
+        <item name="android:fontFamily">@font/hanum</item>
+    </style>
+
+</resources>

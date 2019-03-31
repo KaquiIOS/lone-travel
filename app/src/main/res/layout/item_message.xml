@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <!-- 상대방-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linear_chat_msg_item_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_chat_msg_item_rcv_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_chat_msg_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_chat_msg_item_rcv_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/container_chat_msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/image_view_chat_msg_item_rcv_profile"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_chat_msg_item_profile">
+
+            <TextView
+                android:id="@+id/text_view_chat_msg_item_rcv_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background_others_chat_message"
+                android:padding="7dp"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/image_view_chat_msg_item_rcv_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/background_others_chat_message"
+                android:padding="3dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_chat_msg_item_rcv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="textStart"
+            android:textColor="#68747C"
+            android:textSize="10dp"
+            app:layout_constraintStart_toStartOf="@id/container_chat_msg"
+            app:layout_constraintTop_toBottomOf="@+id/container_chat_msg" />
+
+        <TextView
+            android:id="@+id/text_view_chat_msg_item_rcv_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/royal_bule"
+            android:textSize="10dp"
+            app:layout_constraintStart_toEndOf="@id/text_view_chat_msg_item_rcv_date"
+            app:layout_constraintTop_toBottomOf="@+id/container_chat_msg" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- 내가 쓴 글-->
+
+    <LinearLayout
+        android:id="@+id/linear_chat_msg_item_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="2dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/text_view_chat_msg_item_send_unread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="#FFFF00"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_chat_msg_send_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06/13 오후\n 11:00"
+                android:textAlignment="textEnd"
+                android:textColor="#68747C"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_view_chat_msg_item_send_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_my_chat_message"
+            android:padding="7dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/image_view_chat_msg_item_send_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/background_my_chat_message"
+            android:padding="3dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

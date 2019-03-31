@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout_travel_fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_fragment_travel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:contentInsetStart="0dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_fragment_travel_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="최신순"
+                    android:background="@color/transparent"
+                    android:drawableStart="@drawable/ic_like_order_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <Button
+                    android:id="@+id/btn_fragment_travel_city_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="도시 선택"
+                    android:background="@color/transparent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_fragment_travel_order"/>
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_fragment_travel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/view_gray"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

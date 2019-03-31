@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:theme="@style/base_theme">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"
+        android:layout_marginStart="4dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_add_travel_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/main_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_add_travel_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_add_travel_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_view_add_travel_travel_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_add_travel_profile"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_add_travel_user_name" />
+
+        <TextView
+            android:id="@+id/text_view_add_travel_travel_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toEndOf="@id/image_view_add_travel_profile"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_add_travel_travel_region" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/container_tdd_travel_selected_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/edit_text_add_travel_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/hanum"
+                android:hint="@string/add_travel_hint"
+                android:gravity="top|left"
+                android:imeOptions="actionDone"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:id="@+id/image_view_add_travel_selected_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:visibility="gone"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_add_travel_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/image_btn_add_travel_remove_image_btn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/transparent"
+                android:visibility="gone"
+                android:src="@drawable/ic_add_travel_cancel_20"
+                app:layout_constraintTop_toTopOf="@id/image_view_add_travel_selected_image"
+                app:layout_constraintEnd_toEndOf="@id/image_view_add_travel_selected_image" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/image_btn_add_travel_photo_select"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_photo_travel_add_24"/>
+
+        <ImageButton
+            android:id="@+id/image_btn_add_travel_route_select"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_route_travel_add_24"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

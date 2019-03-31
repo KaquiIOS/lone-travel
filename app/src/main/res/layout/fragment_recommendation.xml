@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/base_theme">
+
+    <Button
+        android:id="@+id/btn_route_rec_search"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_location_search"
+        android:textSize="16sp"
+        android:text="@string/rec_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_route_rec_tags"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:background="@drawable/background_tag_input"
+        android:hint="@string/tag_input"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_route_rec_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_route_rec_search"
+        app:layout_constraintBottom_toBottomOf="@id/btn_route_rec_search"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_route_rec_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_route_rec_search">
+
+
+    </android.support.v7.widget.RecyclerView>
+    <!--
+
+        <Button
+            android:id="@+id/btn_route_rec_order"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_time_order_24"
+            android:gravity="center_vertical"
+            android:text="@string/rec_latest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_route_rec_tag" />
+
+        <Button
+            android:id="@+id/btn_route_recom_city"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:text="@string/rec_city"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/btn_route_rec_order"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_route_rec_tag" />
+
+        -->
+
+        <View
+            android:id="@+id/view_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/text_gray"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_route_rec_tag"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_route_rec_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_line_1">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>
+

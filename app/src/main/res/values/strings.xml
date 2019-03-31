@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">CollpasingTest</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="start_temp">2018-09-04 12:00</string>
+    <string name="end_temp">- 2018-09-08 12:00</string>
+    <string name="id_temp">사용자1</string>
+    <string name="location_temp">경주</string>
+
+
+    <string name="together">같이</string>
+    <string name="go">갈래</string>
+    <!-- Travel String -->
+    <string name="travel_fragment_title">Travel</string>
+    <string name="travel_item_chat">채팅 참여하기</string>
+    <string name="travel_toolbar">동행 구해요!</string>
+
+    <!-- Travel Chat String -->
+    <string name="travel_chat_title">Travel Chat</string>
+    <string name="chat_toolbar">나의 채팅 목록</string>
+
+    <!-- Travel Route String -->
+    <string name="travel_route_title">Route</string>
+    <string name="travel_route_toolbar">나의 여행 목록</string>
+
+    <!-- Travel Route Recommendation String -->
+    <string name="route_recommendation_title">Recommendation</string>
+    <string name="route_recommendation_toolbar">여행 경로 추천!</string>
+
+    <!-- Profile String -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_toolbar">프로필</string>
+
+    <!--SHare-->
+    <string name="shared_route_title_hint">공유할 루트의 제목을 입력해주세요 !</string>
+    <string name="share_route_content_hint">공유할 루트의 설명을 덧붙여 주세요 !</string>
+    <string name="share_route_tag_hint">태그를 입력해주세요 ! (최대 3개)</string>
+    <string name="share_route_select_city">여행 도시를 선택해주세요 !</string>
+    <string name="share_route_detail_info">공유할 경로의 추가 정보 입력 !</string>
+
+    <!--Travel Add String-->
+    <string name="add_travel_toolbar">여행 일정 등록</string>
+    <string name="add_travel_start_date">start_date</string>
+    <string name="add_travel_end_date">end_date</string>
+    <string name="add_travel_region">region</string>
+    <string name="add_travel_content">content</string>
+    <string name="add_travel_photo_path">photo_path</string>
+    <string name="add_travel_route_list">route_list</string>
+    <string name="add_travel_city_num">city_num</string>
+    <string name="add_travel_hint">여행에 대해 간략한 정보를 남겨주세요 !</string>
+    <string name="add_travel_period">period</string>
+
+    <!-- Login String -->
+    <string name="login_activity_id_hint">아이디</string>
+    <string name="login_activity_pw_hint">비밀번호</string>
+    <string name="login_activity_login_temp">로그인</string>
+    <string name="login_activity_user_info">user_info</string>
+
+    <string name="title_activity_login">FireTalk</string>
+
+    <!--추천-->
+    <string name="rec_search">검색</string>
+    <string name="rec_city">도시</string>
+
+    <!-- 여행 상세 정보 -->
+    <string name="item_detail_info_participate_chat">채팅 참여하기</string>
+    <string name="hint_detail_info_comment">댓글을 남겨보세요 !</string>
+
+    <!-- 걍러 -->
+    <string name="hint_route_add_search">장소, 주소 검색</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in Id and Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+
+    <string name="route_info_add">간단한 설명을 적어주세요 !</string>
+    <string name="location_add">등록</string>
+    <string name="location_cancel">취소</string>
+    <string name="location_share">공유</string>
+
+    <!-- Intent Id -->
+    <string name="room_id">room_id</string>
+    <string name="leave_msg">방을 나가시겠습니까 ?</string>
+    <string name="empty_msg_error">메시지를 입력해주세요 !</string>
+    <string name="photo_not_selected_error">사진이 선택되지 않았습니다 !</string>
+    <string name="positive_response">예</string>
+    <string name="negative_response">아니오</string>
+    <string name="uid">uid</string>
+    <string name="uids">uids</string>
+    <string name="tag_input">태그를 입력해보세요 !</string>
+    <string name="my_trip_list">나의 여행 목록</string>
+
+
+    <!--Facebook Appi Id-->
+
+    <string name="api_tmap_version">1</string>
+    <string name="facebook_app_id">272443740058918</string>
+    <string name="app_api_key">a55edc76-dd3c-4b0c-9bd8-bdf203a7f80b</string>
+    <string name="odsay_lab_key">3OfibD0NtqltmH9ysP0XcQ</string>
+
+
+    <!--Rec-->
+    <string name="rec_latest">최신순</string>
+    <string name="rec_like">좋아요순</string>
+    <string name="rec_share">공유순</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">동행 구하기 !</string>
+    <string name="slide_1_desc">같이 갈래 어플을 통해 동행자를 구해보세요 !</string>
+
+    <string name="slide_2_title">채팅을 통한 일정조율 !</string>
+    <string name="slide_2_desc">채팅을 통해 동행 일정을 서로 조율해보세요 !</string>
+
+    <string name="slide_3_title">대중 교통 경로 추천 !</string>
+    <string name="slide_3_desc">경로만 입력하시면 대중 교통도 추천해준다구요 !</string>
+
+    <string name="slide_4_title">여행 경로 추천 !</string>
+    <string name="slide_4_desc">태그 검색을 통해 가장 관련있는 경로를 추천해드려요 !</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="my_route_list">나의 여행 경로들</string>
+
+</resources>

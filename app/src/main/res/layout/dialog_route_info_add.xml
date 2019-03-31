@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:padding="4dp"
+    app:cardCornerRadius="10dp">
+
+    <EditText
+        android:id="@+id/edit_text_route_info_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="제목을 입력해주세요"
+        android:padding="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_text_route_info_add_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_travel_like_chat_background"
+        android:gravity="left|top"
+        android:hint="@string/route_info_add"
+        android:minHeight="100dp"
+        android:minWidth="300dp"
+        android:padding="5dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_route_info_add_title"/>
+
+
+    <TextView
+        android:id="@+id/text_view_route_info_dialog_suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="대중 교통 추천"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_route_info_add_content" />
+
+    <Switch
+        android:id="@+id/switch_route_info_dialog_suggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/text_view_route_info_dialog_suggestion"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_route_info_add_content"/>
+
+
+    <RadioGroup
+        android:id="@+id/rgp_route_info_dialog_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_route_info_dialog_suggestion">
+
+        <RadioButton
+            android:id="@+id/rbtn_route_info_dialog_shortest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최단거리" />
+
+        <RadioButton
+            android:id="@+id/rbtn_route_info_dialog_minimum_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최소비용" />
+
+        <RadioButton
+            android:id="@+id/rbtn_route_info_dialog_minimum_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최단도보" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_route_info_dialog_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_location_cancel"
+        android:text="취소"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgp_route_info_dialog_option" />
+
+
+    <Button
+        android:id="@+id/btn_route_info_dialog_add"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_location_enroll_btn"
+        android:text="등록"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_route_info_dialog_cancel"
+        app:layout_constraintTop_toBottomOf="@+id/rgp_route_info_dialog_option" />
+
+</android.support.constraint.ConstraintLayout>

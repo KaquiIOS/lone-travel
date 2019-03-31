@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="2"
+    android:theme="@style/base_theme">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/image_view_time_select_city"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/text_view_time_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/text_view_time_select_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- 시작 날 이미지 -->
+        <ImageView
+            android:id="@+id/image_view_time_select_start"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_add_travel_departure_20"
+            app:layout_constraintEnd_toStartOf="@id/text_view_time_select_start_date"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/divider_time_select_start"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/view_gray"/>
+
+    <DatePicker
+        android:id="@+id/date_picker_time_select_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:layout_marginTop="4dp"
+        android:calendarTextColor="@color/text_gray"></DatePicker>
+
+    <View
+        android:id="@+id/divider_time_select_mid"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/view_gray" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_margin="2dp">
+
+        <TextView
+            android:id="@+id/text_view_time_select_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/image_view_time_select_end"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_add_travel_arrival_20"
+            app:layout_constraintEnd_toStartOf="@id/text_view_time_select_end_date"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/view_gray"/>
+
+    <DatePicker
+        android:id="@+id/date_picker_time_select_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:calendarTextColor="@color/black"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_time_select_end"></DatePicker>
+
+
+</LinearLayout>
